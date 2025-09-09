@@ -1,0 +1,6 @@
+/home/jon/Documents/Projects/ModuNet/ModuNet/bin/Debug/ModuNet.exe
+/home/jon/Documents/Projects/ModuNet/ModuNet/bin/Debug/ModuNet.pdb
+/home/jon/Documents/Projects/ModuNet/ModuNet/obj/x86/Debug/ModuNet.csproj.AssemblyReference.cache
+/home/jon/Documents/Projects/ModuNet/ModuNet/obj/x86/Debug/ModuNet.csproj.CoreCompileInputs.cache
+/home/jon/Documents/Projects/ModuNet/ModuNet/obj/x86/Debug/ModuNet.exe
+/home/jon/Documents/Projects/ModuNet/ModuNet/obj/x86/Debug/ModuNet.pdb

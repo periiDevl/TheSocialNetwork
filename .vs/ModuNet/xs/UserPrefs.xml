@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|Default">
+  <MonoDevelop.Ide.ItemProperties.ModuNet PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ModuNet/Program.cs">
+    <Files>
+      <File FileName="ModuNet/Program.cs" Line="4" Column="18" />
+      <File FileName="ModuNet/UserDatabase.cs" Line="36" Column="21" />
+      <File FileName="ModuNet/Module.cs" Line="16" Column="45" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ModuNet" expanded="True">
+            <Node name="ModuNet" expanded="True">
+              <Node name="References" expanded="True">
+                <Node name="From Packages" expanded="True" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
