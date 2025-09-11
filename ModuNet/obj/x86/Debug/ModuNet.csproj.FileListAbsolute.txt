@@ -4,3 +4,11 @@
 /home/jon/Documents/Projects/ModuNet/ModuNet/obj/x86/Debug/ModuNet.csproj.CoreCompileInputs.cache
 /home/jon/Documents/Projects/ModuNet/ModuNet/obj/x86/Debug/ModuNet.exe
 /home/jon/Documents/Projects/ModuNet/ModuNet/obj/x86/Debug/ModuNet.pdb
+C:\Users\jonathan peri\Documents\ModuNet\ModuNet\obj\x86\Debug\ModuNet.csproj.AssemblyReference.cache
+C:\Users\jonathan peri\Documents\ModuNet\ModuNet\obj\x86\Debug\ModuNet.csproj.SuggestedBindingRedirects.cache
+C:\Users\jonathan peri\Documents\ModuNet\ModuNet\obj\x86\Debug\ModuNet.exe.config
+C:\Users\jonathan peri\Documents\ModuNet\ModuNet\obj\x86\Debug\Avalonia\Resources.Inputs.cache
+C:\Users\jonathan peri\Documents\ModuNet\ModuNet\obj\x86\Debug\ModuNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonathan peri\Documents\ModuNet\ModuNet\obj\x86\Debug\ModuNet.csproj.CoreCompileInputs.cache
+C:\Users\jonathan peri\Documents\ModuNet\ModuNet\obj\x86\Debug\ModuNet.exe
+C:\Users\jonathan peri\Documents\ModuNet\ModuNet\obj\x86\Debug\ModuNet.pdb

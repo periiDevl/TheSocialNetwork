@@ -1,5 +1,6 @@
 ﻿using System;
-using Mono.Data.Sqlite;
+using Microsoft.Data.Sqlite;
+
 namespace ModuNet
 {
     public class UserDatabase : Module
@@ -12,7 +13,9 @@ namespace ModuNet
         }
         public void create(string filePath)
         {
-            conn = new SqliteConnection("URI=file:"+filePath);
+            conn = new SqliteConnection($"Data Source={filePath}");
+            conn.Open();
+
             conn.Open();
             cmd = conn.CreateCommand();
             cmd.CommandText = @"
