@@ -10,6 +10,7 @@ namespace ModuNet
             datab.manual();
             datab.create("Database.db");
             //datab.register("MR Natan", "Password", "Email@hi", "872879");
+            //datab.delete("Itay Natan");
             datab.showUsers();
             datab.who();
             datab.close();

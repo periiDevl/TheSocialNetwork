@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using Microsoft.Data.Sqlite;
 
 namespace ModuNet
@@ -42,6 +43,15 @@ CREATE TABLE IF NOT EXISTS usersDatabase
             cmd.Parameters.AddWithValue("@password", password);
             cmd.Parameters.AddWithValue("@email", email);
             cmd.Parameters.AddWithValue("@phone", phone);
+            cmd.ExecuteNonQuery();
+        }
+        public void delete(string name)
+        {
+            //Validate with hash the password
+            cmd.CommandText = $@"
+DELETE FROM usersDatabase
+WHERE username = '{name}';
+";
             cmd.ExecuteNonQuery();
         }
         public void showUsers()
