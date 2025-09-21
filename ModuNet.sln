@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuNet", "ModuNet\ModuNet.csproj", "{F133F4EF-2320-4635-A8B3-C2FF8FE56360}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{194F7DB6-6173-480A-961E-FAA1DAF65BE8}"
@@ -15,5 +16,11 @@ Global
 		{F133F4EF-2320-4635-A8B3-C2FF8FE56360}.Debug|x86.Build.0 = Debug|x86
 		{F133F4EF-2320-4635-A8B3-C2FF8FE56360}.Release|x86.ActiveCfg = Release|x86
 		{F133F4EF-2320-4635-A8B3-C2FF8FE56360}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BB1D848-CEE5-4958-A3E8-9CAF95764799}
 	EndGlobalSection
 EndGlobal
