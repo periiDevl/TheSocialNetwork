@@ -59,6 +59,7 @@ UserDatabase
                         d.showUsers();
                     }
                 }
+                
             }
         }
         public static string InputChecker(string awn)
@@ -87,16 +88,11 @@ UserDatabase
                 }
                 return awn;
             }
-            
             return awn;
         }
         public static async Task Main(string[] args)
         {
             PacketHandler pktHandler = new PacketHandler();
-
-            //datab.register("Ms Adva", "Password", "Email@hi", "872879");
-            //datab.delete("Itay Natan");
-            
             Console.WriteLine("Choose if you are a host or a client:");
             Console.WriteLine("C/H");
             string awn = Console.ReadLine();
@@ -116,20 +112,32 @@ UserDatabase
                 var client = new Client();
                 await client.connect();
                 
-                Packet packet = new Packet();
+                Task.Run(async () =>
+                {
+                    while (true)
+                    {
+                        string input = Console.ReadLine();
+                        input = InputChecker(input);
+
+                        if (input == null)
+                            continue;
+
+                        Packet packet = pktHandler.create(currectSECTION, 1, 0, 0, 0);
+                        pktHandler.addPayload(input, ref packet);
+                        await client.sendPacket(packet);
+
+                        Console.WriteLine($"Sent: {input}");
+                    }
+                });
                 while (true)
                 {
-                    packet = pktHandler.create(currectSECTION, 1, 0, 0, 0);
-                    string input = Console.ReadLine();
+                    if (client.dataInStream())
+                    {
+                        Packet response = await client.recivePacket();
+                        Console.WriteLine($"Reply: {response.payload}");
+                    }
 
-                    input = InputChecker(input);
-                    if (input == null) { continue; }
-                    pktHandler.addPayload(input, ref packet);
-                    await client.sendPacket(packet);
-                    
-                    Packet response = await client.recivePacket();
-
-                    Console.WriteLine($"Reply: {response.payload}");
+                    await Task.Delay(1); // prevent 100% CPU usage
                 }
             }
 

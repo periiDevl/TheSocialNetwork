@@ -26,6 +26,10 @@ namespace ModuNet
             );
             */
         }
+        public bool dataInStream()
+        {
+            return stream.DataAvailable;
+        }
         public async Task connect()
         {
             try
