@@ -128,6 +128,7 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="ClientHandler.cs" />
+    <Compile Include="Encyptions.cs" />
     <Compile Include="ModulesManager.cs" />
     <Compile Include="Packet.cs" />
     <Compile Include="Program.cs" />

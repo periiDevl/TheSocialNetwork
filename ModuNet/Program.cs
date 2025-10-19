@@ -1,4 +1,5 @@
-﻿using Avalonia.Styling;
+﻿using Avalonia.Controls.Platform;
+using Avalonia.Styling;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -22,17 +23,17 @@ UserDatabase
 
 ");
         }
-        public static async Task runManager(Server server, string awn)
+        public static void runManager(Server server, string awn)
         {
             while (true)
             {
                 
                 awn = Console.ReadLine();
                 
-                if (awn.StartsWith("include"))
+                if (awn.StartsWith("mount"))
                 {
-                    Console.WriteLine("Detected include.");
-                    awn = awn.Substring(7).Trim('\0', ' ', '\t', '\r', '\n');
+                    Console.WriteLine("Detected mount.");
+                    awn = awn.Substring(6).Trim('\0', ' ', '\t', '\r', '\n');
                     Console.WriteLine("COMMAND = " + awn);
                     if (awn == "UserDatabase")
                     {
@@ -51,12 +52,30 @@ UserDatabase
                     }
                     //datab.close();
                 }
-                if (manager.getModules()[0] is UserDatabase)
+                else if (awn.StartsWith("demount"))
+                {
+                    Console.WriteLine("Demount active");
+                    awn = awn.Substring(8).Trim('\0', ' ', '\t', '\r', '\n');
+
+                    Console.WriteLine("Iterating...");
+                    UserDatabase dbb = (UserDatabase)manager.getModules()[0];
+                    dbb.close();
+                    Module empty = new Module();
+                    manager.getModules()[0] = empty;
+                    Console.WriteLine("DONE.");
+                }
+                if (manager.getModules()[0] is UserDatabase && awn.Contains("DATABASE"))
                 {
                     if (awn == "SHOW DATABASE")
                     {
                         UserDatabase d = (UserDatabase)manager.getModules()[0];
                         d.showUsers();
+                    }
+                    if (awn == "CLOSE DATABASE")
+                    {
+                        UserDatabase d = (UserDatabase)manager.getModules()[0];
+                        d.close();
+                        Console.WriteLine("DONE.");
                     }
                 }
                 
@@ -88,10 +107,28 @@ UserDatabase
                 }
                 return awn;
             }
+            else if (awn.StartsWith("login"))
+            {
+                string[] info = awn.Split('<');
+                string username = info[1].Split('>')[0];
+                string password = info[2].Split('>')[0];
+                awn = $"login <{username}> <{Encyptions.ComputeSha256Hash(password)}>";
+            }
+            string[] awnSplit = awn.Split('/');
+            if (awnSplit.Length == 4) //And in database section
+            {
+                if (awnSplit.Length == 4)
+                {
+                    awnSplit[1] = Encyptions.ComputeSha256Hash(awnSplit[1]);
+                }
+                // USERNAME/PASSWORD/EMAIL/PHONE
+                awn = $"{awnSplit[0]}/{awnSplit[1]}/{awnSplit[2]}/{awnSplit[3]}";
+            }
             return awn;
         }
         public static async Task Main(string[] args)
         {
+            Encyptions enc = new Encyptions();
             PacketHandler pktHandler = new PacketHandler();
             Console.WriteLine("Choose if you are a host or a client:");
             Console.WriteLine("C/H");
@@ -103,9 +140,8 @@ UserDatabase
                 Server server = new Server();
                 server.modules = manager;
                 Task serverTask = server.mainServer();
-                Task managerTask = runManager(server, awn);
-
-                await Task.WhenAny(serverTask, managerTask);
+                runManager(server, awn);
+                await Task.WhenAny(serverTask);
             }
             if (awn == "c")
             {
