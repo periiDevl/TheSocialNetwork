@@ -143,6 +143,8 @@ UserDatabase
                 runManager(server, awn);
                 await Task.WhenAny(serverTask);
             }
+
+
             if (awn == "c")
             {
                 var client = new Client();

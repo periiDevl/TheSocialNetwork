@@ -3,11 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|c:\\users\\jonathan peri\\documents\\modunet\\modunet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonathan peri\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|C:\\Users\\jonathan peri\\Documents\\ModuNet\\modunet\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|c:\\users\\jonathan peri\\documents\\modunet\\modunet\\database\\userdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\database\\userdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|c:\\users\\jonathan peri\\documents\\modunet\\modunet\\streams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\streams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|C:\\Users\\jonathan peri\\Documents\\ModuNet\\modunet\\clienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\clienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|c:\\users\\jonathan peri\\documents\\modunet\\modunet\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,8 +26,16 @@
       "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|C:\\Users\\jonathan peri\\Documents\\ModuNet\\modunet\\userdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\userdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|C:\\Users\\jonathan peri\\Documents\\ModuNet\\modunet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|c:\\users\\jonathan peri\\documents\\modunet\\modunet\\chat\\chatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\chat\\chatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|c:\\users\\jonathan peri\\documents\\modunet\\modunet\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|C:\\Users\\jonathan peri\\Documents\\ModuNet\\modunet\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,13 +50,6 @@
       "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\encyptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonathan peri\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|C:\\Users\\jonathan peri\\Documents\\ModuNet\\modunet\\clienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F133F4EF-2320-4635-A8B3-C2FF8FE56360}|ModuNet\\ModuNet.csproj|solutionrelative:modunet\\clienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonathan peri\\AppData\\Local\\Temp\\.vsdbgsrc\\4aee873c540f53ff6d237a6dff24c418037095d429b05ef77d1826190ac05168\\Socket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -48,7 +60,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Encyptions.cs",
               "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Encyptions.cs",
               "RelativeDocumentMoniker": "ModuNet\\Encyptions.cs",
@@ -68,12 +80,153 @@
               "RelativeToolTip": "ModuNet\\Encyptions.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAgwFUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T09:46:22.61Z",
+              "WhenOpened": "2025-10-05T09:46:22.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Database\\UserDatabase.cs",
+              "RelativeDocumentMoniker": "ModuNet\\Database\\UserDatabase.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Database\\UserDatabase.cs",
+              "RelativeToolTip": "ModuNet\\Database\\UserDatabase.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAmwHUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:51:02.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Program.cs",
+              "RelativeDocumentMoniker": "ModuNet\\Program.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Program.cs",
+              "RelativeToolTip": "ModuNet\\Program.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAhwHIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:50:23.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientHandler.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\ClientHandler.cs",
+              "RelativeDocumentMoniker": "ModuNet\\ClientHandler.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\ClientHandler.cs",
+              "RelativeToolTip": "ModuNet\\ClientHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T05:18:43.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Streams.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Streams.cs",
+              "RelativeDocumentMoniker": "ModuNet\\Streams.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Streams.cs",
+              "RelativeToolTip": "ModuNet\\Streams.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T13:20:29.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Client.cs",
+              "RelativeDocumentMoniker": "ModuNet\\Client.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Client.cs",
+              "RelativeToolTip": "ModuNet\\Client.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T15:58:33.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThrowHelper.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs [Read Only]",
+              "ViewState": "AgIAACsAAAAAAAAAAAAvwD8AAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T13:58:32.627Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Server.cs",
+              "RelativeDocumentMoniker": "ModuNet\\Server.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Server.cs",
+              "RelativeToolTip": "ModuNet\\Server.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T05:08:04.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChatManager.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Chat\\ChatManager.cs",
+              "RelativeDocumentMoniker": "ModuNet\\Chat\\ChatManager.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Chat\\ChatManager.cs",
+              "RelativeToolTip": "ModuNet\\Chat\\ChatManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T13:51:29.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Module.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Module.cs",
+              "RelativeDocumentMoniker": "ModuNet\\Module.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Module.cs",
+              "RelativeToolTip": "ModuNet\\Module.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T13:52:49.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Packet.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Packet.cs",
+              "RelativeDocumentMoniker": "ModuNet\\Packet.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Packet.cs",
+              "RelativeToolTip": "ModuNet\\Packet.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAEwGkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T05:41:08.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModulesManager.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\ModulesManager.cs",
+              "RelativeDocumentMoniker": "ModuNet\\ModulesManager.cs",
+              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\ModulesManager.cs",
+              "RelativeToolTip": "ModuNet\\ModulesManager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAhwB0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T07:49:15.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Socket.cs",
               "DocumentMoniker": "C:\\Users\\jonathan peri\\AppData\\Local\\Temp\\.vsdbgsrc\\4aee873c540f53ff6d237a6dff24c418037095d429b05ef77d1826190ac05168\\Socket.cs",
               "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4aee873c540f53ff6d237a6dff24c418037095d429b05ef77d1826190ac05168\\Socket.cs",
@@ -83,109 +236,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T11:50:01.422Z",
               "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Packet.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Packet.cs",
-              "RelativeDocumentMoniker": "ModuNet\\Packet.cs",
-              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Packet.cs",
-              "RelativeToolTip": "ModuNet\\Packet.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAhwCMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T05:41:08.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Program.cs",
-              "RelativeDocumentMoniker": "ModuNet\\Program.cs",
-              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Program.cs",
-              "RelativeToolTip": "ModuNet\\Program.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAuwGsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T11:50:23.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ModulesManager.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\ModulesManager.cs",
-              "RelativeDocumentMoniker": "ModuNet\\ModulesManager.cs",
-              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\ModulesManager.cs",
-              "RelativeToolTip": "ModuNet\\ModulesManager.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAhwB0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T07:49:15.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Server.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Server.cs",
-              "RelativeDocumentMoniker": "ModuNet\\Server.cs",
-              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Server.cs",
-              "RelativeToolTip": "ModuNet\\Server.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAhwHgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T05:08:04.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Client.cs",
-              "RelativeDocumentMoniker": "ModuNet\\Client.cs",
-              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\Client.cs",
-              "RelativeToolTip": "ModuNet\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T15:58:33.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\UserDatabase.cs",
-              "RelativeDocumentMoniker": "ModuNet\\UserDatabase.cs",
-              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\UserDatabase.cs",
-              "RelativeToolTip": "ModuNet\\UserDatabase.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAhwCIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T11:51:02.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ThrowHelper.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan peri\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs",
-              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs",
-              "ToolTip": "C:\\Users\\jonathan peri\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8caa55885db827e4d60f3d5c73afc8fffa843cc71a5a1ef73ed88dc8694fb812\\ThrowHelper.cs [Read Only]",
-              "ViewState": "AgIAADAAAAAAAAAAAAAvwDYAAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T06:22:43.628Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ClientHandler.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\ClientHandler.cs",
-              "RelativeDocumentMoniker": "ModuNet\\ClientHandler.cs",
-              "ToolTip": "C:\\Users\\jonathan peri\\Documents\\ModuNet\\ModuNet\\ClientHandler.cs",
-              "RelativeToolTip": "ModuNet\\ClientHandler.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwHcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T05:18:43.299Z"
             }
           ]
         }

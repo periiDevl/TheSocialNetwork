@@ -19,6 +19,10 @@ namespace ModuNet
         private TcpClient client;
         private NetworkStream stream;
         public bool running = true;
+
+
+        //Streams
+        ServerRequestPacketStream serverRequestPacketStream = new ServerRequestPacketStream();
         public Server()
         {
             hanlerPkt = new PacketHandler();
@@ -71,77 +75,51 @@ namespace ModuNet
 
         private async Task Communicate(ClientHandler handl)
         {
-            try
+
+            while (running)
             {
-                while (running)
+                try
                 {
                     Packet recived = await handl.recivePacket();
+                    serverRequestPacketStream.recive(recived);
 
                     Console.WriteLine($"Text from {handl.clientID} :{recived.payload}");
                     Packet pktSend = new Packet();
+                    Console.WriteLine($"Client interacted with section [{recived.section}]");
                     //Check if packet is valid
                     if (recived.section == 0)
                     {
                         if (hanlerPkt.getCleanPayload(ref recived).Equals("?"))
                         {
-                            
+
                             pktSend = hanlerPkt.create(0, 1, 2, 3, 0);
                             hanlerPkt.addPayload(modules.containsWhat(), ref pktSend);
                             await handl.sendPacket(pktSend);
                             Console.WriteLine("Send client modules data");
                         }
                     }
-                    else if (recived.section == 1)
+
+                    for (int i = 0; i < modules.getModules().Count; i++)
                     {
-                        UserDatabase datab = (UserDatabase)modules.getModules()[0];
-                        pktSend = hanlerPkt.create(1, 1, 2, 3, 0);
-                        if (hanlerPkt.getCleanPayload(ref recived).Equals("register"))
+                        UInt16 id = (UInt16)(i + 1);
+                        if (recived.section == id)
                         {
-                            
-                            string message = @"Register in this format: \n USERNAME/PASSWORD/EMAIL/PHONE";
-                            hanlerPkt.addPayload(message, ref pktSend);
-                            await handl.sendPacket(pktSend);
-                            recived = await handl.recivePacket();
-                            string[] info = recived.payload.Split('/');
-                            
-                            datab.register(info[0], info[1], info[2], info[3]);
-                            Console.WriteLine($@"Created user with :
-USERNAME = {info[0]}
-EMAIL = {info[1]}
-");
-                            message = "[+]USER CREATED!";
-                            hanlerPkt.addPayload(message, ref pktSend);
-                            await handl.sendPacket(pktSend);
-
+                            modules.getModules()[i].hndlServer(handl, hanlerPkt, pktSend, serverRequestPacketStream, id);
                         }
-                        if (hanlerPkt.getCleanPayload(ref recived).StartsWith("login"))
-                        {
-                            string loginMessage = hanlerPkt.getCleanPayload(ref recived);
-                            //login <USERNAME><PASSWORD>
-                            string[] info = loginMessage.Split('<');
-                            string username = info[1].Split('>')[0];
-                            string password = info[2].Split('>')[0];
-                            bool exists = datab.login(username, password);
-                            string message = "This user does not exist.";
-                            if (exists)
-                            {
-                                message = "You are logged in as : " + username;
-                            }
-                            hanlerPkt.addPayload(message, ref pktSend);
-                            await handl.sendPacket(pktSend);
-                        }
+                        serverRequestPacketStream.flush();
                     }
-
-
-
-                    await Task.Delay(0);
                 }
+
+
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error{ex}");
+                    running = false;
+                }
+                await Task.Delay(0);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error{ex}");
-                running = false;
-            }
+
+
         }
     }
 }

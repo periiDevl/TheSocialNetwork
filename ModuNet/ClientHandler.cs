@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ModuNet
 {
-    internal class ClientHandler
+    public class ClientHandler
     {
         PacketHandler hanlerPkt;
         public TcpClient tcpClient { get; private set; }

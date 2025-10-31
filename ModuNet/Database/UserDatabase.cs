@@ -1,12 +1,16 @@
-﻿using Avalonia.Input;
+﻿using Avalonia.Controls;
+using Avalonia.Input;
 using Microsoft.Data.Sqlite;
 using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace ModuNet
 {
     public class UserDatabase : Module
     {
+        Dictionary<int, string> users = new Dictionary<int, string>();
+
         private SqliteConnection conn;
         private SqliteCommand cmd;
         public UserDatabase()
@@ -94,7 +98,67 @@ WHERE username = '{name}';
             conn?.Close();
             conn?.Dispose();
         }
+        public override async void hndlServer(
+            ClientHandler handl,
+            PacketHandler hanlerPkt,
+            Packet pktSend,
+            ServerRequestPacketStream serverRequestPacketStream,
+            UInt16 ID
+            
+            )
+        {
+            pktSend = hanlerPkt.create(ID, 1, 2, 3, 0);
+            if (hanlerPkt.getCleanPayload(ref serverRequestPacketStream.pkt).Equals("register"))
+            {
 
+                string message = @"Register in this format: \n USERNAME/PASSWORD/EMAIL/PHONE";
+                hanlerPkt.addPayload(message, ref pktSend);
+                await handl.sendPacket(pktSend);
+                serverRequestPacketStream.pkt = await handl.recivePacket();
+                string[] info = serverRequestPacketStream.pkt.payload.Split('/');
+
+                register(info[0], info[1], info[2], info[3]);
+                Console.WriteLine($@"Created user with :
+USERNAME = {info[0]}
+EMAIL = {info[1]}
+");
+                message = "[+]USER CREATED!";
+                hanlerPkt.addPayload(message, ref pktSend);
+                await handl.sendPacket(pktSend);
+
+            }
+            else if (hanlerPkt.getCleanPayload(ref serverRequestPacketStream.pkt).StartsWith("login"))
+            {
+                string loginMessage = hanlerPkt.getCleanPayload(ref serverRequestPacketStream.pkt);
+                //login <USERNAME><PASSWORD>
+                string[] info = loginMessage.Split('<');
+                string username = info[1].Split('>')[0];
+                string password = info[2].Split('>')[0];
+                bool exists = login(username, password);
+                string message = "This user does not exist.";
+                if (exists)
+                {
+                    message = "You are logged in as : " + username;
+                    users.Add(handl.clientID, username);
+                }
+                hanlerPkt.addPayload(message, ref pktSend);
+                await handl.sendPacket(pktSend);
+            }
+            else if (hanlerPkt.getCleanPayload(ref serverRequestPacketStream.pkt).StartsWith("?"))
+            {
+                string message = "";
+                message += "YOUR DATA: [\n";
+                message += $"ID :[|{handl.clientID}|]]\n";
+                string username = "USER";
+                if (users.ContainsKey(handl.clientID)) {
+                    username = users[handl.clientID];
+                }
+                message += $"LOGGED AS :[|{username}|]\n";
+                message += "\n]";
+                hanlerPkt.addPayload(message, ref pktSend);
+                await handl.sendPacket(pktSend);
+            }
+        }
         public override void manual()
         {
             Console.WriteLine("I am a database");

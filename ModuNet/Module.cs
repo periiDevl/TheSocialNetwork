@@ -15,5 +15,17 @@ namespace ModuNet
         {
             Console.WriteLine("Empty Module");
         }
+        public virtual async void hndlServer(
+            ClientHandler handl,
+            PacketHandler hanlerPkt,
+            Packet pktSend,
+            ServerRequestPacketStream serverRequestPacketStream,
+            UInt16 ID
+
+            )
+        {
+            Console.WriteLine($"ID{ID} moudle = null error");
+            throw new NotImplementedException();
+        }
     }
 }
